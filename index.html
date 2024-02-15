@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet"> <!-- Inclui o arquivo de estilo externo -->
+    <link href="tshirt.ico" rel="shortcut icon"> <!-- Define o ícone da guia -->
+
+    <title></title> <!-- Define o título da página -->
+</head>
+<header>
+    <div class="logo_tshirt">
+        <img src="taitai.png" title="Pet Match" height="200" width="200" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Encomendas</a></li> <!-- Link para a página inicial -->
+                <li><a href="produtos.html">Catálogo</a></li> <!-- Link para a página de produtos -->
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div>
+        <p class="titulo"><b>Encomendas</b></p>
+        <hr>
+    </div>
+    <table> <!-- Adiciona bordas à tabela para visualização -->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cliente">
+                <td class="nome">Lucas</td>
+                <td class="produto">Camisa do Barcelona GG</td>
+                <td class="quantidade">2</td>
+                <td class="valor-unitario">R$120,00</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Pedrão</td>
+                <td class="produto">Camisa do Ajax GG</td>
+                <td class="quantidade">1</td>
+                <td class="valor-unitario">R$120,00</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Matheus</td>
+                <td class="produto">Camisa do Japão GG</td>
+                <td class="quantidade">3</td>
+                <td class="valor-unitario">R$120,00</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Negueba</td>
+                <td class="produto">Camisa do Lakers GG</td>
+                <td class="quantidade">1</td>
+                <td class="valor-unitario">R$150,00</td>
+                <td class="total"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<footer>
+    <div class="copyright">
+        <p>&copy; Todos os direitos reservados para TaiTai</p> <!-- Texto de direitos autorais -->
+    </div>
+</footer>
+<script src="calculatotal.js"></script>
+
+</html>
