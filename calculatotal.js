@@ -1,12 +1,33 @@
+//Captura todos os clientes que fizeram encomendas
+var clientes = document.querySelectorAll(".cliente");
 
-const quantidades = document.querySelectorAll(".quantidade");
-const valoresUnitarios = document.querySelectorAll(".valor-unitario");
-const totals = document.querySelectorAll(".total");
+//Passa por cada encomenda, calculando o valor total
+for(var count=0; count < clientes.length; count++){
 
+    //Captura a quantidade encomendada
+    var qtde = clientes[count].querySelector(".quantidade").textContent;
 
-totals.forEach((total, index) => {
-    const quantidade = Number(quantidades[index].textContent);
-    const valorUnitario = Number(valoresUnitarios[index].textContent.replace('R$', '').replace(',', '.'));
+    //Captura o valor unitário do produto
+    var unitario = clientes[count].querySelector(".valor-unitario").textContent;
 
-    total.textContent = 'R$' + (quantidade * valorUnitario).toFixed(2).replace('.', ',');
-});
+    //Valida a quantidade
+    if(qtde<1 || isNaN(qtde) ){
+        //Quantidade OK, avisa o usuário
+        clientes[count].querySelector(".quantidade").textContent = "QTDE INVÁLIDA!";
+        clientes[count].style.backgroundColor="red";
+    }else{
+
+    
+    //Quantidade OK, prossegue
+    //Calcula o valor total da encomenda
+    clientes[count].querySelector(".total").textContent = calculaTotal(qtde, unitario);
+    }
+
+} 
+//função para calcular o valor total da encomenda
+function calculaTotal(qtde, unitario){
+    var total = 0;
+    total=qtde*unitario;
+
+    return total;
+}

@@ -10,53 +10,124 @@ body {
     /* Remove bordas */
 }
 
+
 /* Estilo do cabeçalho */
 header {
     background-color: rgb(20, 20, 54);
+    display: flex;
     /* Define a cor de fundo do cabeçalho */
 }
 
+.logintitle {
+    padding: 10px 0 0 60px;
+}
+
 .logo_tshirt {
-    position: relative;
-    /* Define uma posição relativa para .logo_caixa */
-    margin: auto;
-    /* Centraliza horizontalmente usando 'auto' nas margens esquerda e direita */
-    padding-left: 130px;
 
+    margin-left: 150px;
+    padding-left: 0px;
 
-    
+}
+
+.login-container {
+    position: absolute;
+    /* Define a posição absoluta para a div de login */
+
+    right: 100px;
+    top: 10px;
+
+}
+
+.login {
+    background-color: rgb(194, 151, 32);
+    /* Cor de fundo para a div de login */
+
+    width: 200px;
+    /* Define a largura */
+    border-radius: 30px;
+    /* Arredonda as bordas */
+}
+
+#loginForm .input-container {
+    margin-bottom: 10px;
+    /* Adiciona espaço abaixo de cada container de input */
+}
+
+#loginForm input {
+    width: 100px;
+    /* Largura fixa para as caixas de entrada */
+    height: 15px;
+    /* Altura da caixa de texto */
+    margin-left: -35px;
+    /* Espaço à esquerda da caixa de texto */
+
+}
+
+#loginForm label {
+    font-weight: bold;
+    display: inline-block;
+    /* Exibe as etiquetas como blocos em linha */
+    width: 90px;
+    /* Largura fixa para as etiquetas */
+    text-align: left;
+    /* Alinha o texto das etiquetas à esquerda */
+    margin-left: 15px;
+}
+
+#loginForm input[type="submit"] {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100px;
+    margin-left: 50px;
+    height: 20px;
+    /* Ajusta a margem esquerda do botão de submissão */
 }
 
 /* Estilização da navegação no cabeçalho */
 nav {
-    position: absolute; /* Define o posicionamento absoluto */
-    right: 200px; /* Margem direita de 50 pixels */
-    top: 50px; /* Margem superior de 100 pixels */
+    position: absolute;
+    /* Define o posicionamento absoluto */
+    right: 450px;
+    /* Margem direita de 50 pixels */
+    top: 50px;
+    /* Margem superior de 100 pixels */
 }
 
 nav li {
-    display: inline; /* Exibe os itens em linha */
-    margin: 0 0 0 30px; /* Define margens (0 topo, 0 direita, 0 inferior, 30px esquerda) */
+    display: inline;
+    /* Exibe os itens em linha */
+    margin: 0 0 0 30px;
+    /* Define margens (0 topo, 0 direita, 0 inferior, 30px esquerda) */
 }
 
 
 /* Estilização do menu */
 nav a {
-    color: rgb(255, 255, 255); /* Define a cor do texto */
-    text-decoration: none; /* Remove decoração de texto */
-    text-transform: auto; /* Transformação de texto automática (isso deve ser 'none' ou outra transformação desejada) */
-    font-weight: bold; /* Define a espessura da fonte como negrito */
-    font-size: 50px; /* Define o tamanho da fonte como 50 pixels */
-   
-    transition: transform 0.3s ease; /* Transição suave de 0.3 segundos para a propriedade 'transform' */
-    display: inline-block; /* Para garantir que o efeito de escala funcione corretamente */
+    color: rgb(255, 255, 255);
+    /* Define a cor do texto */
+    text-decoration: none;
+    /* Remove decoração de texto */
+    text-transform: auto;
+    /* Transformação de texto automática (isso deve ser 'none' ou outra transformação desejada) */
+    font-weight: bold;
+    /* Define a espessura da fonte como negrito */
+    font-size: 50px;
+    /* Define o tamanho da fonte como 50 pixels */
+
+    transition: transform 0.3s ease;
+    /* Transição suave de 0.3 segundos para a propriedade 'transform' */
+    display: inline-block;
+    /* Para garantir que o efeito de escala funcione corretamente */
 }
 
 /* Estilização do menu quando o mouse está em cima */
 nav a:hover {
-    color: rgb(194, 151, 32); /* Altera a cor do texto para preto quando o mouse passa por cima */
-    text-decoration: none; /* Remove decoração de texto */
-    transform: scale(1.1); /* Efeito de escala quando o mouse passa por cima */
+    color: rgb(194, 151, 32);
+    /* Altera a cor do texto para preto quando o mouse passa por cima */
+    text-decoration: none;
+    /* Remove decoração de texto */
+    transform: scale(1.1);
+    /* Efeito de escala quando o mouse passa por cima */
 }
 
 .titulo {
