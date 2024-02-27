@@ -19,7 +19,35 @@ header {
 
 .logintitle {
     padding: 10px 0 0 60px;
+    color: white;
 }
+
+.logintitle2 {
+    padding: 10px 0 0 0px;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+
+#logoutButton {
+    margin: 0 0 5px 60px;
+    background-color: rgb(20, 20, 54); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+#logoutButton:hover {
+    background-color: darkred; /* Cor de fundo quando hover */
+}
+ 
+
+
 
 .logo_tshirt {
 
@@ -63,6 +91,7 @@ header {
 }
 
 #loginForm label {
+    color: white;
     font-weight: bold;
     display: inline-block;
     /* Exibe as etiquetas como blocos em linha */
@@ -74,6 +103,27 @@ header {
 }
 
 #loginForm input[type="submit"] {
+    font-weight: bold;
+    background-color: rgb(20, 20, 54); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    margin-bottom: 5px;
+    width: 100px;
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse */
+    border: none; /* Remove a borda */
+    margin-left: 50px;
+    height: 20px;
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    /* Ajusta a margem esquerda do botão de submissão */
+    
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: darkred; /* Cor de fundo quando hover */
+
+
+}
+
+#loginForm input[type="submit2"] {
     font-weight: bold;
     margin-bottom: 5px;
     width: 100px;
