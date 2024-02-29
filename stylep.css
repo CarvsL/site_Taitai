@@ -32,7 +32,7 @@ header {
 
 
 #logoutButton {
-    margin: 0 0 5px 60px;
+    margin: 0 0 5px 40px;
     background-color: rgb(20, 20, 54); /* Cor de fundo */
     color: white; /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno */
@@ -131,6 +131,75 @@ header {
     height: 20px;
     /* Ajusta a margem esquerda do botão de submissão */
 }
+
+/* Estiliza o ícone do carrinho */
+#cartIcon {
+    position: absolute; /* Posicionamento absoluto para permitir a centralização */
+    top: 85%; /* Coloca o topo do ícone no meio vertical */
+    left: 74%; /* Coloca o ícone no meio horizontal */
+    transform: translate(-50%, -50%); /* Centraliza completamente o ícone */
+    cursor: pointer; /* Altera o cursor para um ponteiro quando hover */
+    
+    
+    
+    
+}
+
+#cartIcon img {
+    width: 48px; /* Redimensiona o ícone do carrinho */
+    
+    
+}
+
+
+
+/* Estiliza a área do carrinho de compras */
+#cartArea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 1400px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    z-index: 999; /* Garante que o carrinho esteja sempre na parte superior */
+}
+
+/* Estiliza o conteúdo do carrinho */
+#cartContent {
+    padding: 20px;
+}
+
+/* Estiliza o botão de finalizar compra */
+#checkoutButton {
+    
+    
+    position: absolute;
+    bottom: 70px; /* Posiciona o botão na parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    padding: 10px 20px;
+    background-color: rgb(20, 20, 54);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Estiliza o botão de fechar */
+#closeButton {
+    position: absolute;
+    bottom: 30px; /* Posiciona o botão na parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 
 
 /* Estilização da navegação no cabeçalho */

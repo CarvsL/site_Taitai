@@ -2,59 +2,76 @@
 <html>
 
 <head>
-    <link href="stylep.css" rel="stylesheet"> <!-- Inclui o arquivo de estilo externo -->
-    <link href="tshirt.ico" rel="shortcut icon"> <!-- Define o ícone da guia -->
+  <link href="stylep.css" rel="stylesheet"> <!-- Inclui o arquivo de estilo externo -->
+  <link href="tshirt.ico" rel="shortcut icon"> <!-- Define o ícone da guia -->
 
-    <title></title> <!-- Define o título da página -->
+  <title></title> <!-- Define o título da página -->
 </head>
 <header>
-    <div class="logo_tshirt">
-        <img src="taitai.png" title="Pet Match" height="200" width="200" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Encomendas</a></li> <!-- Link para a página inicial -->
-                <li><a href="produtos.html">Catálogo</a></li> <!-- Link para a página de produtos -->
-                
-            </ul>
-        </nav>
+  <div class="logo_tshirt">
+    <img src="taitai.png" title="Pet Match" height="200" width="200" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Encomendas</a></li> <!-- Link para a página inicial -->
+        <li><a href="produtos.html">Catálogo</a></li> <!-- Link para a página de produtos -->
 
-        <div id="loginSection">
-          <div class="login-container">
-              <div class="login">
-                  <h2 class="logintitle">Login</h2>
-                  <div id="error" style="color: red;"></div>
-                  <form id="loginForm">
-                      <div class="input-container">
-                          <label for="username">User:</label>
-                          <input type="text" id="username" name="username" required>
-                      </div>
-                      <div class="input-container">
-                          <label for="password">Senha:</label>
-                          <input type="password" id="password" name="password" required>
-                      </div>
-                      <input type="submit" value="Entrar">
-                  </form>
-              </div>
-          </div>
-      </div>
-      
-      <div id="contentSection" style="display: none;">
-        <div class="login-container">
-            <div class="login">
-                <h2 class="logintitle2">Bem-Vindo <span id="loggedInUsername"></span></h2>
-                <input type="button"  id="logoutButton" value="Sair"> <!-- Botão de Sair -->
-                <div id="error" style="color: red;"></div>
+      </ul>
+    </nav>
+
+    <div id="loginSection">
+      <div class="login-container">
+        <div class="login">
+          <h2 class="logintitle">Login</h2>
+          <div id="error" style="color: red;"></div>
+          <form id="loginForm">
+            <div class="input-container">
+              <label for="username">User:</label>
+              <input type="text" id="username" name="username" required>
             </div>
+            <div class="input-container">
+              <label for="password">Senha:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="Entrar">
+          </form>
         </div>
+      </div>
     </div>
-      
+
+    <div id="contentSection" style="display: none;">
+      <div class="login-container">
+        <div class="login">
+          <h2 class="logintitle2">Bem-Vindo <span id="loggedInUsername"></span></h2>
+          <div id="cartIcon">
+            <img src="carrinho.png" alt="Carrinho">
+          </div>
+          <div id="cartArea" style="display: none;">
+            <!-- Conteúdo do carrinho de compras -->
+            
+            <div id="cartContent">
+              <!-- Outros elementos do carrinho aqui -->
+              
+            </div>
+              <button id="checkoutButton">Finalizar Compra</button>
+              <button id="closeButton">Fechar</button>
+            
+          </div>
+          <input type="button" id="logoutButton" value="Sair"> <!-- Botão de Sair -->
+            <div id="error" style="color: red;"></div>
+        </div>
+      </div>
+
+
     </div>
+
+
+  </div>
 </header>
 
 <body>
-    <div>
-        <p class="titulo"><b>Catálgo</b></p>
-        <hr>
+  <div>
+    <p class="titulo"><b>Catálgo</b></p>
+    <hr>
   </div>
 
   <div class="product">
@@ -139,15 +156,16 @@
 
   <script src="produtos.js"></script>
   <script src="login.js"></script>
+  <script src="carrinho.js"></script>
 
 </body>
 <script>
-  
 
-  
+
+
 </script>
 <script>
- 
+
 </script>
 <footer>
   <div class="copyright">
@@ -157,6 +175,6 @@
 <script src="teste.js"></script>
 
 
-  
+
 
 </html>
