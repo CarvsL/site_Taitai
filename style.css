@@ -6,7 +6,7 @@ body {
     /* Remove margens externas */
     padding: 0;
     /* Remove preenchimento */
-    border: 0;
+    /* border: 0; */
     /* Remove bordas */
 }
 
@@ -15,6 +15,46 @@ header {
     background-color: rgb(20, 20, 54);
     display: flex;
     /* Define a cor de fundo do cabeçalho */
+}
+
+.titulo {
+    font-size: 30px;
+    padding-left: 140px;
+}
+
+hr {
+    width: 85%;
+    /* Define a largura da linha para 50% da largura do contêiner */
+    height: 5px;
+    /* Define a altura da linha */
+    background-color: rgb(194, 151, 32);
+    /* Cor da linha */
+    border: none;
+    /* Remove a borda padrão */
+    margin-top: -16px;
+}
+
+table {
+    /* background-color: rgb(194, 151, 32); */
+    width: 85%;
+    /* Define a largura da tabela */
+    margin: 20px auto;
+    /* Centraliza a tabela horizontalmente */
+    margin-bottom: 800px;
+    border: 1px solid rgb(194, 151, 32);
+    border-spacing: 0;
+}
+th {
+    background-color: rgb(194, 151, 32);
+    /* Cor de fundo para células do cabeçalho */
+    border: 1px solid rgb(194, 151, 32);
+}
+td {
+    text-align: center;
+    /* Centraliza o conteúdo das células */
+    padding: 7px;
+    color: rgb(20, 20, 54);
+    border: 1px solid rgb(194, 151, 32);
 }
 
 .logintitle {
@@ -246,57 +286,11 @@ nav a:hover {
     /* Efeito de escala quando o mouse passa por cima */
 }
 
-.titulo {
-    font-size: 30px;
-    padding-left: 140px;
-}
-
-hr {
-    width: 85%;
-    /* Define a largura da linha para 50% da largura do contêiner */
-    height: 5px;
-    /* Define a altura da linha */
-    background-color: rgb(194, 151, 32);
-    /* Cor da linha */
-    border: none;
-    /* Remove a borda padrão */
-    margin-top: -16px;
-}
-
-table {
-    background-color: rgb(194, 151, 32);
-    width: 85%;
-    /* Define a largura da tabela */
-    margin: 20px auto;
-    /* Centraliza a tabela horizontalmente */
-    margin-bottom: 800px;
-}
-
-th,
-td {
-    text-align: center;
-    /* Centraliza o conteúdo das células */
-    padding: 7px;
-
-}
-
-th {
-    background-color: rgb(194, 151, 32);
-    /* Cor de fundo para células do cabeçalho */
-}
-
-td {
-    background-color: white;
-    color: rgb(20, 20, 54);
-}
-
 footer {
 
     background-color: rgb(20, 20, 54);
     /* Define a cor de fundo do cabeçalho */
 }
-
-
 
 .copyright {
     color: white;

@@ -6,6 +6,7 @@ for(var count=0; count < clientes.length; count++){
 
     //Captura a quantidade encomendada
     var qtde = clientes[count].querySelector(".quantidade").textContent;
+    var uni = clientes[count].querySelector(".valor-unitario").textContent;
 
     //Captura o valor unitário do produto
     var unitario = clientes[count].querySelector(".valor-unitario").textContent;
@@ -14,6 +15,19 @@ for(var count=0; count < clientes.length; count++){
     if(qtde<1 || isNaN(qtde) ){
         //Quantidade OK, avisa o usuário
         clientes[count].querySelector(".quantidade").textContent = "QTDE INVÁLIDA!";
+        clientes[count].querySelector(".quantidade").style.color="red";
+    }else{
+
+    
+    //Quantidade OK, prossegue
+    //Calcula o valor total da encomenda
+    clientes[count].querySelector(".total").textContent = calculaTotal(qtde, unitario);
+    }
+
+    //Valida o unitario
+    if(uni<1 || isNaN(uni) ){
+        //Quantidade OK, avisa o usuário
+        
         clientes[count].style.backgroundColor="red";
     }else{
 
