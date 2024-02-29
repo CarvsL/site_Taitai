@@ -2,23 +2,71 @@
 <html>
 
 <head>
-    <link href="style.css" rel="stylesheet"> <!-- Inclui o arquivo de estilo externo -->
+    <link href="style.css" rel="stylesheet">  <!--Inclui o arquivo de estilo externo -->
     <link href="tshirt.ico" rel="shortcut icon"> <!-- Define o ícone da guia -->
 
     <title></title> <!-- Define o título da página -->
 </head>
 <header>
     <div class="logo_tshirt">
-        <img src="taitai.png" title="Pet Match" height="200" width="200" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Encomendas</a></li> <!-- Link para a página inicial -->
-                <li><a href="produtos.html">Catálogo</a></li> <!-- Link para a página de produtos -->
+      <img src="taitai.png" title="Pet Match" height="200" width="200" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Encomendas</a></li> <!-- Link para a página inicial -->
+          <li><a href="produtos.html">Catálogo</a></li> <!-- Link para a página de produtos -->
+  
+        </ul>
+      </nav>
+  
+      <div id="loginSection">
+        <div class="login-container">
+          <div class="login">
+            <h2 class="logintitle">Login</h2>
+            <div id="error" style="color: red;"></div>
+            <form id="loginForm">
+              <div class="input-container">
+                <label for="username">User:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="input-container">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <input type="submit" value="Entrar">
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <div id="contentSection" style="display: none;">
+        <div class="login-container">
+          <div class="login">
+            <h2 class="logintitle2">Bem-Vindo <span id="loggedInUsername"></span></h2>
+            <div id="cartIcon">
+              <img src="carrinho.png" alt="Carrinho">
+            </div>
+            <div id="cartArea" style="display: none;">
+              <!-- Conteúdo do carrinho de compras -->
+              
+              <div id="cartContent">
+                <!-- Outros elementos do carrinho aqui -->
                 
-            </ul>
-        </nav>
+              </div>
+                <button id="checkoutButton">Finalizar Compra</button>
+                <button id="closeButton">Fechar</button>
+              
+            </div>
+            <input type="button" id="logoutButton" value="Sair"> <!-- Botão de Sair -->
+              <div id="error" style="color: red;"></div>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+  
     </div>
-</header>
+  </header>
 
 <body>
     <div>
@@ -40,39 +88,42 @@
                 <td class="nome">Lucas</td>
                 <td class="produto">Camisa do Barcelona GG</td>
                 <td class="quantidade">2</td>
-                <td class="valor-unitario">R$120,00</td>
+                <td class="valor-unitario">120</td>
                 <td class="total"></td>
             </tr>
             <tr class="cliente">
                 <td class="nome">Pedrão</td>
                 <td class="produto">Camisa do Ajax GG</td>
                 <td class="quantidade">1</td>
-                <td class="valor-unitario">R$120,00</td>
+                <td class="valor-unitario">120</td>
                 <td class="total"></td>
             </tr>
             <tr class="cliente">
                 <td class="nome">Matheus</td>
                 <td class="produto">Camisa do Japão GG</td>
                 <td class="quantidade">3</td>
-                <td class="valor-unitario">R$120,00</td>
+                <td class="valor-unitario">-5</td>
                 <td class="total"></td>
             </tr>
             <tr class="cliente">
                 <td class="nome">Negueba</td>
                 <td class="produto">Camisa do Lakers GG</td>
-                <td class="quantidade">1</td>
-                <td class="valor-unitario">R$150,00</td>
+                <td class="quantidade">-10</td>
+                <td class="valor-unitario">150</td>
                 <td class="total"></td>
             </tr>
         </tbody>
-    </table>
 
+    </table>
+    <script src="calculatotal.js"></script>
+    <script src="login.js"></script>
+    <script src="carrinho.js"></script>
+
+    
 </body>
 <footer>
     <div class="copyright">
         <p>&copy; Todos os direitos reservados para TaiTai</p> <!-- Texto de direitos autorais -->
     </div>
 </footer>
-<script src="teste.js"></script>
-
 </html>
