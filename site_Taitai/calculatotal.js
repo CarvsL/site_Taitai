@@ -3,45 +3,51 @@ var clientes = document.querySelectorAll(".cliente");
 
 //Passa por cada encomenda, calculando o valor total
 for(var count=0; count < clientes.length; count++){
+    
 
     //Captura a quantidade encomendada
-    var qtde = clientes[count].querySelector(".quantidade").textContent;
-    var uni = clientes[count].querySelector(".valor-unitario").textContent;
-
-    //Captura o valor unitário do produto
-    var unitario = clientes[count].querySelector(".valor-unitario").textContent;
-
-    //Valida a quantidade
-    if(qtde<1 || isNaN(qtde) ){
-        //Quantidade OK, avisa o usuário
-        clientes[count].querySelector(".quantidade").textContent = "QTDE INVÁLIDA!";
-        clientes[count].querySelector(".quantidade").style.color="red";
-    }else{
+    var qtde = parseFloat(clientes[count].querySelector(".quantidade").textContent);
+    var uni = parseFloat(clientes[count].querySelector(".valor-unitario").textContent);
 
     
-    //Quantidade OK, prossegue
-    //Calcula o valor total da encomenda
-    clientes[count].querySelector(".total").textContent = calculaTotal(qtde, unitario);
-    }
+    
 
-    //Valida o unitario
-    if(uni<1 || isNaN(uni) ){
-        //Quantidade OK, avisa o usuário
+    if (uni < 1 || isNaN(uni)) {
+    clientes[count].style.backgroundColor = "red";
+    clientes[count].querySelector(".total").textContent = "--";
+            
+
+    } else if (qtde < 1 || isNaN(qtde)) {
+
+    
+    clientes[count].querySelector(".total").textContent = "--";
+    clientes[count].querySelector(".quantidade").textContent = "QTDE INVÁLIDA!";
+     clientes[count].querySelector(".quantidade").style.color = "red";
         
-        clientes[count].style.backgroundColor="red";
-    }else{
-
+    } else {
     
-    //Quantidade OK, prossegue
-    //Calcula o valor total da encomenda
-    clientes[count].querySelector(".total").textContent = calculaTotal(qtde, unitario);
+    clientes[count].querySelector(".total").textContent = formataValor(calculaTotal(qtde, uni));
+    clientes[count].querySelector(".valor-unitario").textContent = formataValor(uni);
+    
     }
+    
 
 } 
-//função para calcular o valor total da encomenda
-function calculaTotal(qtde, unitario){
-    var total = 0;
-    total=qtde*unitario;
 
+
+
+//função para calcular o valor total da encomenda
+function calculaTotal(qtde, uni){
+    var total = 0;
+    total=qtde*uni;
     return total;
 }
+
+function formataValor(x){
+    var ftotal = x;
+    x = ftotal.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'});
+    parseFloat(x);
+    return x;
+}
+
+
