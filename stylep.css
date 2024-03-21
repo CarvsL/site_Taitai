@@ -3,6 +3,7 @@ body {
     font-family: "Arial";
     /* Define a fonte padrão para o corpo do documento */
     margin: 0;
+    background-color: #b4e3ff;
     /* Remove margens externas */
     padding: 0;
     /* Remove preenchimento */
@@ -12,7 +13,7 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     display: flex;
     /* Define a cor de fundo do cabeçalho */
 }
@@ -33,7 +34,7 @@ header {
 
 #logoutButton {
     margin: 0 0 5px 40px;
-    background-color: rgb(20, 20, 54); /* Cor de fundo */
+    background-color: #041d2c; /* Cor de fundo */
     color: white; /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Remove a borda */
@@ -66,7 +67,7 @@ header {
 }
 
 .login {
-    background-color: rgb(194, 151, 32);
+    background-color: #5a9f95;
     /* Cor de fundo para a div de login */
 
     width: 200px;
@@ -104,7 +105,7 @@ header {
 
 #loginForm input[type="submit"] {
     font-weight: bold;
-    background-color: rgb(20, 20, 54); /* Cor de fundo */
+    background-color: #041d2c; /* Cor de fundo */
     color: white; /* Cor do texto */
     margin-bottom: 5px;
     width: 100px;
@@ -160,7 +161,7 @@ header {
     right: 0;
     bottom: 0;
     left: 1400px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    background-color: white; /* Fundo semi-transparente */
     z-index: 999; /* Garante que o carrinho esteja sempre na parte superior */
 }
 
@@ -178,7 +179,7 @@ header {
     left: 50%;
     transform: translateX(-50%); /* Centraliza horizontalmente */
     padding: 10px 20px;
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     color: white;
     border: none;
     cursor: pointer;
@@ -241,7 +242,7 @@ nav a {
 
 /* Estilização do menu quando o mouse está em cima */
 nav a:hover {
-    color: rgb(194, 151, 32);
+    color: rgba(90,159,149,255);
     /* Altera a cor do texto para preto quando o mouse passa por cima */
     text-decoration: none;
     /* Remove decoração de texto */
@@ -250,8 +251,10 @@ nav a:hover {
 }
 
 .titulo {
-    font-size: 30px;
+    text-align: center;
+    font-size: 60px;
     padding-left: 140px;
+    color: #041d2c;
 }
 
 hr {
@@ -259,7 +262,7 @@ hr {
     /* Define a largura da linha para 50% da largura do contêiner */
     height: 5px;
     /* Define a altura da linha */
-    background-color: rgb(194, 151, 32);
+    background-color: #041d2c;
     /* Cor da linha */
     border: none;
     /* Remove a borda padrão */
@@ -289,7 +292,7 @@ hr {
     /* Centraliza os botões */
     padding: 10px 20px;
     /* Adiciona padding aos botões */
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -329,7 +332,7 @@ hr {
     /* Centraliza os botões */
     padding: 10px 20px;
     /* Adiciona padding aos botões */
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -369,7 +372,7 @@ hr {
     /* Centraliza os botões */
     padding: 10px 20px;
     /* Adiciona padding aos botões */
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -409,7 +412,7 @@ hr {
     /* Centraliza os botões */
     padding: 10px 20px;
     /* Adiciona padding aos botões */
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -449,7 +452,7 @@ select {
 
 footer {
 
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
     /* Define a cor de fundo do cabeçalho */
 }
 
@@ -461,13 +464,13 @@ footer {
     font-size: 12px;
     /* Define o tamanho da fonte como 12 pixels */
     margin: 0 0 0 900px;
-    background-color: rgb(20, 20, 54);
+    background-color: #041d2c;
 
-    border-bottom: 1px solid rgb(20, 20, 54);
+    border-bottom: 1px solid #041d2c;
     /* Aqui você define a cor e a espessura da borda inferior */
     padding-bottom: 50px;
     /* Adiciona algum espaçamento entre o texto e a borda */
-    border-top: 1px solid rgb(20, 20, 54);
+    border-top: 1px solid #041d2c;
     padding-top: 50px;
 
 }
@@ -482,19 +485,19 @@ footer {
 
 /* Cor da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background: rgb(194, 151, 32);
+    background: rgb(167, 33, 0);
     /* Cor de fundo da barra de rolagem */
 }
 
 /* Cor da alça da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background: rgb(20, 20, 54);
+    background: #041d2c;
     /* Cor da alça da barra de rolagem */
 }
 
 /* Cor ao passar o mouse sobre a alça da barra de rolagem */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(20, 20, 54);
+    background: #041d2c;
     /* Cor ao passar o mouse sobre a alça da barra de rolagem */
 }
 
